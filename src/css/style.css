@@ -1,0 +1,149 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:  rgba(83, 81, 207, 0.164);
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+.navbar a{
+  padding: 2rem;
+}
+.titulo{
+  font-size: 3rem;
+}
+header a {
+  justify-content: spa;
+ 
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+/*  CSS para pagina de inicio *index* */
+.section-Home{
+   text-align: left;
+   padding: 10rem; 
+}
+
+.section-Home h1 {
+ 
+  font-size: 3.5rem;
+}
+.section-Home h3 {
+  font-size: 2rem;
+}
+.section-Home p {
+  font-size: 1.3rem;
+  width: 50%;
+}
+
+
+
+.section-Home button {
+  background-color: rgba(83, 81, 207, 0.521);
+  color: white;
+  width: 8rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  
+}
+.section-Home button:hover {
+  background-color: rgba(83, 81, 207, 0.521);
+
+  
+}
+/*  CSS para pagina de sobre mi *sobre-mi* */
+
+.section-SobreMi {
+  text-align: center;
+}
+.section-SobreMi h1 {
+  font-size: 3.5rem;
+}
+
+.section-SobreMi img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.section-SobreMi p {
+  font-size: 1.3rem;
+}
+
+/*  CSS para pagina de habilidades *habilidades* */
+.sectionHabilidades {
+  text-align: center;
+}
+
+.sectionHabilidades h1 {
+  font-size: 3.5rem;
+}
+.sectionHabilidades h3 {
+  font-size: 2rem;
+}
+/*  CSS para pagina de contactame *contactame* */
+
+.sectionContactame {
+  text-align: center;
+}
+
+.sectionContactame h1 {
+  font-size: 3.5rem;
+}
+
+.sectionContactame textarea {
+  resize: none;
+}
+
+/*  CSS para pagina de experiencia *experiencia* */
+
+.sectionExperiencia {
+  text-align: center;
+}
+.sectionExperiencia h1 {
+  font-size: 3.5rem;
+}
+
+.sectionExperiencia .sectionEstudios {
+  border: solid;
+}
+
+.sectionExperiencia .sectionEstudios h1 {
+  font-size: 1rem;
+}
+.sectionExperiencia .sectionEstudios h3 {
+  font-size: 0.8rem;
+}
+
+.sectionExperiencia .sectionExperienciaLaboral {
+  border: solid;
+}
+
+.sectionExperiencia .sectionExperienciaLaboral h1 {
+  font-size: 1rem;
+}
+.sectionExperiencia .sectionExperienciaLaboral h3 {
+  font-size: 0.8rem;
+}
+
+.repositorio {
+  text-align: center;
+}
+.repositorio img {
+  width: 5%;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  color: white;
+}
