@@ -233,3 +233,69 @@ footer {
   text-align: center;
   color: white;
 }
+
+
+
+
+/*  CSS responsive*/
+@media screen and (max-width:650px) {
+  
+  /*  CSS navbar*/
+  .abrir-menu,.cerrar-menu{
+      display: block;
+      font-size: 2rem;
+      background-color: transparent;
+      cursor: pointer; 
+  }
+
+    .abrir-menu{
+     color: rgb(0, 0, 0);        
+    }
+    .cerrar-menu{
+      color: rgb(255, 255, 255);
+    }
+  .navbar{
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 2rem;
+      bottom: 0;
+      background-color: rgb(27, 26, 26);
+      box-shadow: 0 0 0 100vmax rgba(0, 0,0, .5);
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      z-index:50;
+      color: antiquewhite;
+   }
+   
+  .navbar.visible{
+      opacity: 3;
+      visibility: visible ;
+   }
+
+   .navbar.visible{
+    opacity: 1;
+    visibility: visible ;
+ }
+
+.navbar a{
+    flex-direction: column;
+    align-items: end;
+  
+}
+.navbar a{
+   color: aliceblue;
+  
+}
+.navbar{
+    margin-right: 0rem ;
+}
+ 
+ 
+}
+
+
