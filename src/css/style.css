@@ -1,75 +1,140 @@
 * {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
+  scroll-behavior: smooth;
+  font-family: "Roboto Condensed", sans-serif;
+  
 
+}
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color:  rgba(83, 81, 207, 0.164);
-  padding: 2rem;
-  font-size: 1.5rem;
+  margin: 2rem;
+  font-size: 1.3rem;
 }
 
-.navbar a{
-  padding: 2rem;
+.navbar a {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 500;
+  margin-left: 2.5rem;
+  transition: 0.5s;
 }
-.titulo{
-  font-size: 3rem;
+.navbar a:hover {
+  color: #8a8a8a;
 }
+
 header a {
-  justify-content: spa;
- 
-  text-align: center;
   text-decoration: none;
   color: black;
 }
 
-/*  CSS para pagina de inicio *index* */
-.section-Home{
-   text-align: left;
-   padding: 10rem; 
-}
-
-.section-Home h1 {
- 
-  font-size: 3.5rem;
-}
-.section-Home h3 {
-  font-size: 2rem;
-}
-.section-Home p {
-  font-size: 1.3rem;
-  width: 50%;
-}
-
-
-
-.section-Home button {
-  background-color: rgba(83, 81, 207, 0.521);
-  color: white;
-  width: 8rem;
-  height: 2rem;
-  font-size: 1.2rem;
+.abrir-menu,
+.cerrar-menu {
+  display: none;
   border: 0;
-  cursor: pointer;
-  transition: background-color 0.5s;
+}
+
+
+/*  CSS para pagina de inicio *index* */
+.home {
+  height: calc(100vh - 96px);
+  display: flex; 
+  align-items: center ;
+  padding: 0 9%;
+  background: url("../img/fondo4.jpg") no-repeat;
+  background-position: right;
+}
+
+.contenido-home {
+  max-width: 50rem;
+}
+.contenido-home h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 0;
+}
+.contenido-home h3 {
+  font-size: 1.5rem;
+
+  color: black;
+}
+.contenido-home p {
+  font-size: 1.5rem;
   
 }
-.section-Home button:hover {
-  background-color: rgba(83, 81, 207, 0.521);
 
-  
+.btn-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+}
+.btn-box .btn {
+  position: relative;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 100%;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  overflow: hidden;
+  color: black;
+}
+.btn-box .btn::before {
+  content: "";
+  position: absolute;
+  border: 10px;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(38, 34, 51, 0.443);
+  z-index: 1;
+  transition: 1s;
+}
+
+.btn-box .btn:hover::before {
+  font-size: 1px;
+  width: 100%;
+}
+
+.home-contacto {
+  display: flex;
+  position: absolute;
+  bottom:10rem;
+  width: 170px;
+  justify-content: space-between;
+}
+
+.home-contacto a {
+  position: relative;
+  justify-content: center;
+  width: 39px;
+  height: 42px;
+  align-items: center;
+  border-radius: 120px;
+  color: rgba(0, 0, 0, 0.548);
+  transition: 0.4s;
+}
+
+.home-contacto a:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 /*  CSS para pagina de sobre mi *sobre-mi* */
 
 .section-SobreMi {
+  
+  height: calc(100vh - 170px);
+  margin-top: 13rem;
   text-align: center;
 }
 .section-SobreMi h1 {
   font-size: 3.5rem;
 }
-
 .section-SobreMi img {
   width: 20%;
   border-radius: 50%;
@@ -142,8 +207,191 @@ header a {
   width: 5%;
 }
 
-footer {
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-  color: white;
+
+/*  CSS footer  */
+
+.footer-contacto {
+ 
+  position: flex;
+  width: 98%;
+  bottom: 0;
+  height: 60px;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+
+}
+
+footer a {
+  position: relative;
+  justify-content: center;
+  width: 39px;
+  height: 42px;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 120px;
+  color: rgba(41, 38, 38, 0.548);
+  transition: 0.4s;
+}
+
+
+/*  CSS responsive*/
+@media screen and (max-width: 600px) {
+ 
+body{
+  background-position: cover;
+  background-repeat: no-repeat;
+ 
+  
+  top: 0;
+}
+  header {
+/*  CSS header*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.3rem;
+    
+  }
+
+  header .titulo {
+    font-size: 1.5rem;
+    margin: 0px auto;
+    
+  }
+  /*  CSS navbar*/
+ 
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .abrir-menu {
+    color: rgb(0, 0, 0);
+  }
+  .cerrar-menu {
+    color: rgb(0, 0, 0);
+  }
+  .navbar {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem;
+    bottom: 0;
+    background-color: rgb(218, 209, 209);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    z-index: 50;
+  }
+  .navbar {
+    margin-right: 0rem;
+  }
+
+  .navbar.visible {
+    opacity: 3;
+    visibility: visible;
+    color: rgb(0, 0, 0);
+  }
+
+  .navbar a {
+    flex-direction: column;
+    align-items: end;
+    color: rgb(0, 0, 0);
+  }
+
+  /* CSS RESPONSIVE PARA footer */
+
+  .footer-contacto{
+    display:flex;
+  }
+  /* CSS RESPONSIVE PARA VISTA index */
+
+
+
+  .home {
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    background: none;
+    flex-wrap: wrap; 
+    padding: 0;
+    
+
+    
+  }
+  .home .contenido-home{
+    max-width: 100%;
+  }
+
+  .home h1{
+    top:  30rem;
+    bottom: 10rem;
+    text-align: center;
+    font-size: 2rem;
+
+  }
+  .home h3{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  .home p{
+    text-align: center;
+    font-size: 1rem;
+  }
+  .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+  }
+  .btn-box .btn {
+
+    width: 20rem;
+    height: 100%;
+    border: .01rem solid rgb(53, 51, 51);
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    color: rgb(0, 0, 0);
+    margin-top: 5rem;
+  }
+  
+ .home-contacto {
+  bottom: .8rem;
+  width: 97%;
+}
+
+/* CSS responsivve para sobremi.html  */
+.section-SobreMi {
+   
+  
+}
+.section-SobreMi h1 {
+  font-size: 3.5rem;
+}
+
+.section-SobreMi img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.section-SobreMi p {
+  font-size: 1rem;
+}
+
+
+
+
 }

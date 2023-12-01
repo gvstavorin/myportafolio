@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/css/style.css" />
     <title>Portafolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <!-- Cabezera de navegacion -->
 
     <header class="header">
-      <a href="../index.html"> Gustavo.</a>
-
-      <nav class="navbar">
+      <a href="../index.html" class="titulo"> Gustavo</a>
+      <button class="abrir-menu" id="abrir">  <i class='bx bx-menu' ></i></button>
+      <nav class="navbar" id="navbar">
+        <button class="cerrar-menu" id="cerrar"><i class='bx bx-menu-alt-right' ></i></button>
         <a href="../index.html" class="activo">Inicio</a>
         <a href="./sobre-mi.html">Sobre Mi</a>
         <a href="./experiencia.html">Experiencia</a>
@@ -40,6 +42,13 @@
       </section>
     </main>
 
-    <footer>Informacion footer</footer>
+    <footer class="footer-contacto">
+     
+      <a href="#"><i class='bx bxl-github bx-lg' ></i></box-icon> </a>
+      <a href="#"><i class='bx bxl-facebook-circle bx-lg' ></i></a>
+      <a href="#"><i class='bx bxl-linkedin-square bx-lg' ></i></a>
+
+    </footer>
+    <script src="../src/js/main.js"></script>
   </body>
 </html>
