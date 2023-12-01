@@ -1,15 +1,14 @@
 * {
   scroll-behavior: smooth;
   font-family: "Roboto Condensed", sans-serif;
+  
 
 }
-
-
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  margin: 2rem;
   font-size: 1.3rem;
 }
 
@@ -35,34 +34,33 @@ header a {
   border: 0;
 }
 
+
 /*  CSS para pagina de inicio *index* */
 .home {
-  min-height: 92vh;
-  padding: 10rem 9% 5rem;
-  display: flex;
-  align-items: center;
+  height: calc(100vh - 96px);
+  display: flex; 
+  align-items: center ;
   padding: 0 9%;
   background: url("../img/fondo4.jpg") no-repeat;
   background-position: right;
 }
 
-
-
 .contenido-home {
-  max-width: 60rem;
+  max-width: 50rem;
 }
 .contenido-home h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 0;
 }
 .contenido-home h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+
   color: black;
 }
 .contenido-home p {
   font-size: 1.5rem;
-  margin: 1rem 0 1rem;
+  
 }
 
 .btn-box {
@@ -129,7 +127,9 @@ header a {
 /*  CSS para pagina de sobre mi *sobre-mi* */
 
 .section-SobreMi {
-  min-height: 100vh;
+  
+  height: calc(100vh - 170px);
+  margin-top: 13rem;
   text-align: center;
 }
 .section-SobreMi h1 {
@@ -210,16 +210,16 @@ header a {
 
 /*  CSS footer  */
 
-footer {
+.footer-contacto {
+ 
   position: flex;
-  width: 100%;
+  width: 98%;
   bottom: 0;
   height: 60px;
-  background: #c2bcbc7e;
   color: #fff;
-  display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  display: none;
 
 }
 
@@ -238,12 +238,14 @@ footer a {
 
 /*  CSS responsive*/
 @media screen and (max-width: 600px) {
-  html{
-    background: url("../img/fondo2.jpg") no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    
-  }
+ 
+body{
+  background-position: cover;
+  background-repeat: no-repeat;
+ 
+  
+  top: 0;
+}
   header {
 /*  CSS header*/
     display: flex;
@@ -307,16 +309,24 @@ footer a {
     color: rgb(0, 0, 0);
   }
 
+  /* CSS RESPONSIVE PARA footer */
 
+  .footer-contacto{
+    display:flex;
+  }
   /* CSS RESPONSIVE PARA VISTA index */
 
 
 
   .home {
-    min-height: 70vh;
-    display: flex;
+    position: absolute;
+    bottom: 0;
     align-items: center;
     background: none;
+    flex-wrap: wrap; 
+    padding: 0;
+    
+
     
   }
   .home .contenido-home{
@@ -324,6 +334,8 @@ footer a {
   }
 
   .home h1{
+    top:  30rem;
+    bottom: 10rem;
     text-align: center;
     font-size: 2rem;
 
@@ -358,7 +370,7 @@ footer a {
   
  .home-contacto {
   bottom: .8rem;
-  width: 80%;
+  width: 97%;
 }
 
 /* CSS responsivve para sobremi.html  */
