@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   scroll-behavior: smooth;
   font-family: "Roboto Condensed", sans-serif;
 
@@ -39,19 +37,15 @@ header a {
 
 /*  CSS para pagina de inicio *index* */
 .home {
-  
+  min-height: 92vh;
+  padding: 10rem 9% 5rem;
   display: flex;
   align-items: center;
   padding: 0 9%;
   background: url("../img/fondo4.jpg") no-repeat;
   background-position: right;
-
 }
 
-section {
-  min-height: 90vh;
-  padding: 10rem 9% 5rem;
-}
 
 
 .contenido-home {
@@ -102,7 +96,7 @@ section {
   height: 100%;
   background: rgba(38, 34, 51, 0.443);
   z-index: 1;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .btn-box .btn:hover::before {
@@ -113,7 +107,7 @@ section {
 .home-contacto {
   display: flex;
   position: absolute;
-  bottom: 4rem;
+  bottom:10rem;
   width: 170px;
   justify-content: space-between;
 }
@@ -124,26 +118,23 @@ section {
   width: 39px;
   height: 42px;
   align-items: center;
-  background-color: transparent;
   border-radius: 120px;
   color: rgba(0, 0, 0, 0.548);
   transition: 0.4s;
 }
 
 .home-contacto a:hover {
-  transform: scale(
-    1.2
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 /*  CSS para pagina de sobre mi *sobre-mi* */
 
 .section-SobreMi {
+  min-height: 100vh;
   text-align: center;
 }
 .section-SobreMi h1 {
   font-size: 3.5rem;
 }
-
 .section-SobreMi img {
   width: 20%;
   border-radius: 50%;
@@ -216,14 +207,43 @@ section {
   width: 5%;
 }
 
+
+/*  CSS footer  */
+
 footer {
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-  color: white;
+  position: flex;
+  width: 100%;
+  bottom: 0;
+  height: 60px;
+  background: #c2bcbc7e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
 }
+
+footer a {
+  position: relative;
+  justify-content: center;
+  width: 39px;
+  height: 42px;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 120px;
+  color: rgba(41, 38, 38, 0.548);
+  transition: 0.4s;
+}
+
 
 /*  CSS responsive*/
 @media screen and (max-width: 600px) {
+  html{
+    background: url("../img/fondo2.jpg") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    
+  }
   header {
 /*  CSS header*/
     display: flex;
@@ -231,6 +251,13 @@ footer {
     justify-content: space-between;
     padding: 1rem;
     font-size: 1.3rem;
+    
+  }
+
+  header .titulo {
+    font-size: 1.5rem;
+    margin: 0px auto;
+    
   }
   /*  CSS navbar*/
  
@@ -246,7 +273,7 @@ footer {
     color: rgb(0, 0, 0);
   }
   .cerrar-menu {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
   .navbar {
     opacity: 0;
@@ -256,14 +283,13 @@ footer {
     right: 0;
     padding: 2rem;
     bottom: 0;
-    background-color: rgb(70, 62, 62);
+    background-color: rgb(218, 209, 209);
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: end;
     gap: 1rem;
     z-index: 50;
-    color: antiquewhite;
   }
   .navbar {
     margin-right: 0rem;
@@ -272,29 +298,22 @@ footer {
   .navbar.visible {
     opacity: 3;
     visibility: visible;
+    color: rgb(0, 0, 0);
   }
 
   .navbar a {
     flex-direction: column;
     align-items: end;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
   }
 
 
   /* CSS RESPONSIVE PARA VISTA index */
 
-  html{
-    background: url("../img/fondo2.jpg") no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    
-  }
-  section {
-    min-height: 70vh;
-    padding: 10rem 9% 5rem;
-    
-  }
+
+
   .home {
+    min-height: 70vh;
     display: flex;
     align-items: center;
     background: none;
@@ -329,7 +348,7 @@ footer {
 
     width: 20rem;
     height: 100%;
-    border: .01rem solid rgb(231, 15, 15);
+    border: .01rem solid rgb(53, 51, 51);
     border-radius: 1rem;
     font-size: 1.3rem;
     letter-spacing: 0.3rem;
@@ -340,6 +359,24 @@ footer {
  .home-contacto {
   bottom: .8rem;
   width: 80%;
+}
+
+/* CSS responsivve para sobremi.html  */
+.section-SobreMi {
+   
+  
+}
+.section-SobreMi h1 {
+  font-size: 3.5rem;
+}
+
+.section-SobreMi img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.section-SobreMi p {
+  font-size: 1rem;
 }
 
 
