@@ -183,25 +183,22 @@ header a {
   padding: 20px;
 }
 
-
-
 .section {
-  background-color: #ecf0f1;
-  border-radius: 8px;
+  background-color: #fff3f3;
+  border-radius: 4px;
   overflow: hidden;
+  border-bottom: 1px solid black;
 }
 
 .section h2 {
-  background-color: #3f4244;
-  color: #fff;
+  background-color: #181717;
+  color: rgb(206, 205, 205);
   padding: 10px;
-  border: solid #000000;
   margin: 0;
 }
 
 .item {
-  padding: 20px;
-  border: 1px solid #000000;
+  padding: 2rem;
 }
 
 .title {
@@ -221,34 +218,7 @@ header a {
   }
 }
 
-.sectionExperiencia {
-  text-align: center;
-}
-.sectionExperiencia h1 {
-  font-size: 3.5rem;
-}
 
-.sectionExperiencia .sectionEstudios {
-  border: solid;
-}
-
-.sectionExperiencia .sectionEstudios h1 {
-  font-size: 1rem;
-}
-.sectionExperiencia .sectionEstudios h3 {
-  font-size: 0.8rem;
-}
-
-.sectionExperiencia .sectionExperienciaLaboral {
-  border: solid;
-}
-
-.sectionExperiencia .sectionExperienciaLaboral h1 {
-  font-size: 1rem;
-}
-.sectionExperiencia .sectionExperienciaLaboral h3 {
-  font-size: 0.8rem;
-}
 
 .repositorio {
   text-align: center;
@@ -436,7 +406,16 @@ body{
   font-size: 1rem;
 }
 
+/* CSS responsivve para experiencia.html  */
+.container-experiencia {
+  grid-template-columns: repeat(2, 1fr);
+}
+.repositorio img {
+  width: 40%;
+}
 
+
+/* CSS responsivve para habilidades.html  */
 
 
 }
