@@ -145,16 +145,106 @@ header a {
 }
 
 /*  CSS para pagina de habilidades *habilidades* */
-.sectionHabilidades {
+
+.titulo-habilidades { 
   text-align: center;
+  font-size: 3.5rem;
+  padding: 20px;
+  margin: 0;
 }
 
-.sectionHabilidades h1 {
-  font-size: 3.5rem;
+.container-habilidades {
+  display: grid;
+  justify-content: end; 
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+ 
 }
-.sectionHabilidades h3 {
-  font-size: 2rem;
+
+.section-habilidades {
+  
+  background-color: #fff3f3;
+  border-radius: .4rem;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+ 
 }
+
+.section-habilidades h2 {
+  background-color: #181717;
+  color: rgb(206, 205, 205);
+  padding: 10px;
+  margin: 0;
+}
+
+.item-habilidades {
+  padding: 1rem;
+}
+
+.title-habilidades {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+ 
+.progress-container {
+  width: 300px;
+  background-color: #000000;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar1 {
+  width: 20%; /* Ajusta este valor según el progreso deseado (puede ser en porcentaje) */
+  height: 30px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+.progress-bar2 {
+  width: 40%; /* Ajusta este valor según el progreso deseado (puede ser en porcentaje) */
+  height: 30px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}.progress-bar3 {
+  width: 60%; /* Ajusta este valor según el progreso deseado (puede ser en porcentaje) */
+  height: 30px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}.progress-bar4 {
+  width: 30%; /* Ajusta este valor según el progreso deseado (puede ser en porcentaje) */
+  height: 30px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}.progress-bar5 {
+  width: 60%; /* Ajusta este valor según el progreso deseado (puede ser en porcentaje) */
+  height: 30px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}.progress-bar6 {
+  width: 90%; /* Ajusta este valor según el progreso deseado (puede ser en porcentaje) */
+  height: 30px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+
+
+
+
 /*  CSS para pagina de contactame *contactame* */
 
 .sectionContactame {
@@ -176,48 +266,43 @@ header a {
   padding: 20px;
   margin: 0;
 }
-.container {
+.container-experiencia {
   display: grid;
+  justify-content: end; 
   grid-template-columns: 1fr;
   grid-gap: 20px;
   padding: 20px;
 }
 
-.section {
+.section-experiencia {
+  
   background-color: #fff3f3;
-  border-radius: 4px;
+  border-radius: .4rem;
   overflow: hidden;
   border-bottom: 1px solid black;
 }
 
-.section h2 {
+.section-experiencia h2 {
   background-color: #181717;
   color: rgb(206, 205, 205);
   padding: 10px;
   margin: 0;
 }
 
-.item {
+.item-experiencia {
   padding: 2rem;
 }
 
-.title {
+.title-experiencia {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.info {
+.info-experiencia {
   font-size: 16px;
   margin-bottom: 10px;
 }
-
-@media (min-width: 600px) {
-  .container {
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 
 
 .repositorio {
@@ -406,16 +491,29 @@ body{
   font-size: 1rem;
 }
 
-/* CSS responsivve para experiencia.html  */
-.container-experiencia {
-  grid-template-columns: repeat(2, 1fr);
-}
+
+/* CSS responsivve para habilidades.html  */
 .repositorio img {
   width: 40%;
 }
 
+}
 
-/* CSS responsivve para habilidades.html  */
 
 
+ 
+
+@media (min-width: 600px) {
+
+  .container-experiencia {
+      grid-template-columns: repeat(1, 1fr);
+      
+  }
+  .section-experiencia{
+    align-items: center;
+     
+  }
+  .container-habilidades {
+    grid-template-columns: repeat(2, 1fr);
+}
 }
