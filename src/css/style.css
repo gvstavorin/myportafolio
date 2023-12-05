@@ -12,14 +12,13 @@ header {
   justify-content: space-between;
   margin: 2rem;
   font-size: 1.3rem;
+  
 }
 
 .navbar a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: black;
-  font-weight: 500;
-  margin-left: 2.5rem;
-  transition: 0.5s;
+  margin-left:3rem;
 }
 .navbar a:hover {
   color: #8a8a8a;
