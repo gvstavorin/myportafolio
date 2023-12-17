@@ -1,0 +1,15 @@
+@import "src/sass/utilities/mixin";
+
+//SOBRE MI RESPONSIVE
+@mixin sobreMiResponsive {
+  @include tablet() {
+
+   
+        }
+    
+       
+  
+  @include mobile() {
+  
+  }
+}

@@ -1,0 +1,78 @@
+@import "src/sass/utilities/mixin";
+
+//MIXIN PARA HOME RESPONSIVE
+@mixin homeResponsive {
+  @include tablet() {
+
+    .home {
+        position: absolute;
+        bottom: 0;
+        align-items: center;
+        padding: 0;
+      
+        .contenido-home{
+            text-align: center;
+            h1{
+                font-size: 3rem;
+            }
+           
+        }
+        .home-contacto {
+            
+            bottom: 2rem;
+            width: 97%;
+          }
+        }
+    }
+       
+  
+  @include mobile() {
+    .home {
+      position: absolute;
+      bottom: 0;
+      align-items: center;
+      padding: 0;
+      .contenido-home {
+        max-width: 100%;
+        h1 {
+          top: 30rem;
+          bottom: 10rem;
+          text-align: center;
+          font-size: 2rem;
+        }
+        h3 {
+          text-align: center;
+          font-weight: normal;
+          font-size: 1.3rem;
+          margin-top: 1rem;
+        }
+        p {
+          text-align: center;
+          font-size: 1rem;
+        }
+        .btn-box {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          height: 4rem;
+          .btn {
+            width: 20rem;
+            height: 100%;
+            border: 0.01rem solid rgb(53, 51, 51);
+            border-radius: 1rem;
+            font-size: 1.3rem;
+            letter-spacing: 0.3rem;
+            color: rgb(0, 0, 0);
+            margin-top: 5rem;
+          }
+        }
+      }
+      .home-contacto {
+        bottom: 0.8rem;
+        width: 97%;
+      }
+   
+    }
+    
+  }
+}

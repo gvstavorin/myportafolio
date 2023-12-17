@@ -1,0 +1,46 @@
+@import "src/sass/utilities/mixin";
+
+
+
+//Diseno para footer responsivo
+
+@mixin footerResponsive {
+
+  
+        width: 95%;
+        bottom: 1.5;
+        height: 60px;
+        color: #fff;
+        align-items: center;
+        justify-content: space-between;
+        display: none;
+        flex: 1;
+      
+        a {
+          position: relative;
+          justify-content: center;
+          width: 39px;
+          height: 42px;
+          align-items: center;
+          background-color: transparent;
+          border-radius: 120px;
+          color: rgba(41, 38, 38, 0.548);
+          transition: 0.4s;
+        }
+      
+        @include tablet() {
+
+
+          bottom: 4;
+          display: flex;
+          margin-top: auto;
+
+
+        }
+        @include mobile() {
+          display: flex;
+          margin-top: auto;
+        }
+      
+      
+}

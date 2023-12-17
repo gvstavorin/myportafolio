@@ -1,0 +1,71 @@
+@import "src/sass/utilities/mixin";
+
+//MIXIN PARA HEADER RESPONSIVE
+@mixin headerResponsive {
+  @include tablet() {
+  }
+
+  @include mobile() {
+    display: flex;
+    padding: 1rem;
+    font-size: 1.5rem;
+    .titulo {
+      font-size: 2rem;
+    }
+  }
+}
+
+
+@mixin menuIconResponsive {
+  @include mobile() {
+    .abrir-menu,
+    .cerrar-menu {
+      display: block;
+      font-size: 2rem;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+  }
+}
+
+
+@mixin navbarResponsive {
+  @include tablet() {
+   .navbar  a {
+      font-size: 1rem;
+      margin-left: 1rem;
+    }
+  }
+  @include mobile() {
+    .navbar {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 2rem;
+      bottom: 0;
+      background-color: #fff;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      z-index: 50;
+    }
+
+    .navbar.visible {
+      opacity: 3;
+      visibility: visible;
+      color: rgb(0, 0, 0);
+    }
+
+    .navbar a {
+      flex-direction: column;
+      align-items: end;
+      color: rgb(0, 0, 0);
+    }
+  }
+}
+
