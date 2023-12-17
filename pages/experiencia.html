@@ -3,18 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/tutorials/timelines/timeline-3/assets/css/timeline-3.css">
     <link rel="stylesheet" href="../src/css/style.css" />
     <title>Portafolio</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Cabezera de navegacion -->
 
     <header class="header">
-      <a class="titulo"  href="../index.html"> Gustavo</a>
-      <button class="abrir-menu" id="abrir">  <i class='bx bx-menu' ></i></button>
+      <a class="titulo" href="../index.html"> Gustavo</a>
+      <button class="abrir-menu" id="abrir"><i class="bx bx-menu"></i></button>
       <nav class="navbar" id="navbar">
-        <button class="cerrar-menu" id="cerrar"><i class='bx bx-menu-alt-right' ></i></button>
+        <button class="cerrar-menu" id="cerrar">
+          <i class="bx bx-menu-alt-right"></i>
+        </button>
         <a href="../index.html" class="activo">Inicio</a>
         <a href="./sobre-mi.html">Sobre Mi</a>
         <a href="./experiencia.html">Experiencia</a>
@@ -23,49 +34,89 @@
       </nav>
     </header>
 
-    <main>
+    <section class="bsb-timeline-3 py-3 py-md-5 py-xl-8 animate__animated animate__fadeIn">
       <h1 class="titulo-experiencia">Mi Experiencia y Estudios</h1>
-      <div class="container-experiencia">
-        <div class="section-experiencia">
-            <h2>Experiencia Laboral</h2>
-            <div class="item-experiencia">
-                <div class="title-experiencia">Nombre de la Empresa 1</div>
-                <div class="info-experiencia">Cargo - Fecha de Inicio/Finalización</div>
-                <div class="info-experiencia">Descripción breve de responsabilidades y logros</div>
-            </div>
-            <div class="item-experiencia">
-                <div class="title-experiencia">Nombre de la Empresa 2</div>
-                <div class="info-experiencia">Cargo - Fecha de Inicio/Finalización</div>
-                <div class="info-experiencia">Descripción breve de responsabilidades y logros</div>
-            </div>
-        </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10 col-md-12 col-xl-10 col-xxl-9">
+            <ul class="timeline">
+              <li class="timeline-item left">
+                <div class="timeline-body">
+                  <div class="timeline-content timeline-indicator">
+                    <div class="card border-0 shadow">
+                      <div class="card-body p-xl-4">
+                        <h5 class="card-subtitle text-secondary mb-1">2023</h5>
+                        <h2 class="card-title mb-3">Experiencia 2</h2>
+                        <p class="card-text m-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloremque, repellat explicabo aliquid aspernatur perspiciatis atque hic. Nesciunt non iusto eius consequatur doloremque aperiam, cumque incidunt aliquam, voluptatibus nobis omnis.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-item right">
+                <div class="timeline-body">
+                  <div class="timeline-content timeline-indicator">
+                    <div class="card border-0 shadow">
+                      <div class="card-body p-xl-4">
+                        <h5 class="card-subtitle text-secondary mb-1">2022</h5>
+                        <h2 class="card-title mb-3">Experiencia 1</h2>
+                        <p class="card-text m-0">
+                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quaerat harum eius vero cum quam ducimus perspiciatis natus? Architecto hic perferendis soluta quas laboriosam iste accusantium non ea, voluptatibus fugit!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
 
-        <div class="section-experiencia">
-            <h2>Educación</h2>
-            <div class="item-experiencia">
-                <div class="title-experiencia">Nombre de la Universidad 1</div>
-                <div class="info-experiencia">Título Obtenido - Fecha de Graduación</div>
-            </div>
-            <div class="item-experiencia">
-                <div class="title-experiencia">Nombre de la Universidad 2</div>
-                <div class="info-experiencia">Título Obtenido - Fecha de Graduación</div>
-            </div>
+              <li class="timeline-item left">
+                <div class="timeline-body">
+                  <div class="timeline-content timeline-indicator">
+                    <div class="card border-0 shadow">
+                      <div class="card-body p-xl-4">
+                        <h5 class="card-subtitle text-secondary mb-1">2019</h5>
+                        <h2 class="card-title mb-3">Estudios 2</h2>
+                        <p class="card-text m-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit obcaecati ut? Natus eveniet atque a voluptas explicabo neque rerum, ullam libero incidunt totam exercitationem necessitatibus deserunt ut doloremque voluptatem?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-item right">
+                <div class="timeline-body">
+                  <div class="timeline-content timeline-indicator">
+                    <div class="card border-0 shadow">
+                      <div class="card-body p-xl-4">
+                        <h5 class="card-subtitle text-secondary mb-1">2013</h5>
+                        <h2 class="card-title mb-3">Estudios 1</h2>
+                        <p class="card-text m-0">
+                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus impedit culpa eaque omnis adipisci suscipit eligendi ipsam explicabo natus, nostrum distinctio a perferendis doloremque quae eius optio at officiis unde.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <section class="repositorio">
-      <h1>Repositorio</h1>
-      <a href="https://github.com/gvstavorin">
-        <img src="../src/img/github.png" alt="Logo de github" srcset=""
-      /></a>
+      </div>
     </section>
-    </main>
 
     <footer class="footer-contacto">
-     
-      <a href="https://github.com/gvstavorin"><i class='bx bxl-github bx-lg' ></i> </a>
-      <a href="mailto:gustavoandreescg@gmail.com"><i class='bx bxl-gmail bx-lg'></i></a>
-      <a href="https://www.linkedin.com/in/gustavoandreescg/"><i class='bx bxl-linkedin-square bx-lg' ></i></a>
-
+      <a href="https://github.com/gvstavorin"
+        ><i class="bx bxl-github bx-lg"></i>
+      </a>
+      <a href="mailto:gustavoandreescg@gmail.com"
+        ><i class="bx bxl-gmail bx-lg"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/gustavoandreescg/"
+        ><i class="bx bxl-linkedin-square bx-lg"></i
+      ></a>
     </footer>
     <script src="../src/js/main.js"></script>
   </body>

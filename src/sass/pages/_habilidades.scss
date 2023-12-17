@@ -4,16 +4,27 @@
 //SOBRE habilidades
 @mixin habilidadesResponsive {
   @include tablet() {
+    .titulo-habilidades {
+
+        font-size: 2.5rem;
+        padding: 5rem;
+      }
     .container-habilidades {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         margin: 4rem;
       }
   }
 
   @include mobile() {
+    
+.titulo-habilidades {
+
+    font-size: 2rem;
+    padding: 5rem;
+  }
     .container-habilidades {
         grid-template-columns: repeat(1, 1fr);
-        margin: 4rem;
+        margin: 1rem;
       }
   }
 }
