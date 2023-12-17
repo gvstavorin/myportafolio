@@ -1,0 +1,8 @@
+@mixin progressBar($valor){
+        width: $valor; // Ajusta este valor según el progreso deseado (puede ser en porcentaje)
+        height: 30px;
+        background-color: #4caf50;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+}

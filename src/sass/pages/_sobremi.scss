@@ -3,13 +3,36 @@
 //SOBRE MI RESPONSIVE
 @mixin sobreMiResponsive {
   @include tablet() {
+    .section-SobreMi {
+      h1 {
+        font-size: 2rem;
+      }
 
-   
-        }
-    
-       
-  
+      img {
+        width: 50%;
+        border-radius: 50%;
+        border: 5px solid #cac6c6;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
   @include mobile() {
-  
+    .section-SobreMi {
+      h1 {
+        font-size: 2rem;
+      }
+
+      img {
+        width: 50%;
+        border-radius: 50%;
+        border: 5px solid #cac6c6;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
   }
 }

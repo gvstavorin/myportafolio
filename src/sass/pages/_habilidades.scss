@@ -1,0 +1,19 @@
+@import "src/sass/utilities/mixin";
+@import "src/sass/components/progress-bar";
+
+//SOBRE habilidades
+@mixin habilidadesResponsive {
+  @include tablet() {
+    .container-habilidades {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 4rem;
+      }
+  }
+
+  @include mobile() {
+    .container-habilidades {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 4rem;
+      }
+  }
+}

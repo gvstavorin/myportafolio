@@ -25,9 +25,10 @@ header {
     header {
       display: flex;
       padding: 1rem;
-      font-size: 1.5rem; }
+      font-size: 1rem; }
       header .titulo {
-        font-size: 2rem; } }
+        text-align: center;
+        font-size: 1.2rem; } }
 
 .abrir-menu,
 .cerrar-menu {
@@ -213,6 +214,89 @@ header {
   .section-SobreMi p {
     font-size: 1.3rem; }
 
+@media screen and (max-width: 900px) {
+  .section-SobreMi h1 {
+    font-size: 2rem; }
+  .section-SobreMi img {
+    width: 50%;
+    border-radius: 50%;
+    border: 5px solid #cac6c6; }
+  .section-SobreMi p {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 670px) {
+  .section-SobreMi h1 {
+    font-size: 2rem; }
+  .section-SobreMi img {
+    width: 50%;
+    border-radius: 50%;
+    border: 5px solid #cac6c6; }
+  .section-SobreMi p {
+    font-size: 1rem; } }
+
+.titulo-experiencia {
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 0; }
+
+.container-experiencia {
+  display: grid;
+  justify-content: end;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 4rem; }
+  .container-experiencia .section-experiencia {
+    background-color: #fff3f3;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px 12px rgba(130, 138, 138, 0.69); }
+    .container-experiencia .section-experiencia h2 {
+      background-color: #181717;
+      color: #cecdcd;
+      padding: 10px;
+      margin: 0; }
+    .container-experiencia .section-experiencia .item-experiencia {
+      padding: 2rem; }
+      .container-experiencia .section-experiencia .item-experiencia .title-experiencia {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px; }
+      .container-experiencia .section-experiencia .item-experiencia .info-experiencia {
+        font-size: 16px;
+        margin-bottom: 10px; }
+
+.repositorio {
+  text-align: center; }
+  .repositorio img {
+    width: 10%; }
+
+@media screen and (max-width: 900px) {
+  .titulo-experiencia {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem; }
+  .container-experiencia {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    margin: 1rem; }
+    .container-experiencia .section-experiencia {
+      align-items: center; } }
+
+@media screen and (max-width: 670px) {
+  .titulo-experiencia {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem; }
+  .container-experiencia {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    margin: 1rem; }
+    .container-experiencia .section-experiencia {
+      align-items: center; }
+  .repositorio img {
+    width: 20%; } }
+
 .titulo-habilidades {
   text-align: center;
   font-size: 3.5rem;
@@ -292,6 +376,16 @@ header {
           line-height: 30px;
           color: white; }
 
+@media screen and (max-width: 900px) {
+  .container-habilidades {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 4rem; } }
+
+@media screen and (max-width: 670px) {
+  .container-habilidades {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 4rem; } }
+
 .sectionContactame {
   display: flex;
   align-items: center;
@@ -331,43 +425,6 @@ header {
       left: 35%; }
     .sectionContactame .formularioContacto button:hover {
       background-color: #646664; }
-
-.titulo-experiencia {
-  text-align: center;
-  font-size: 3.5rem;
-  margin: 0; }
-
-.container-experiencia {
-  display: grid;
-  justify-content: end;
-  text-align: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  margin: 4rem; }
-  .container-experiencia .section-experiencia {
-    background-color: #fff3f3;
-    border-radius: 0.4rem;
-    overflow: hidden;
-    box-shadow: 0px 8px 15px 12px rgba(130, 138, 138, 0.69); }
-    .container-experiencia .section-experiencia h2 {
-      background-color: #181717;
-      color: #cecdcd;
-      padding: 10px;
-      margin: 0; }
-    .container-experiencia .section-experiencia .item-experiencia {
-      padding: 2rem; }
-      .container-experiencia .section-experiencia .item-experiencia .title-experiencia {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 5px; }
-      .container-experiencia .section-experiencia .item-experiencia .info-experiencia {
-        font-size: 16px;
-        margin-bottom: 10px; }
-
-.repositorio {
-  text-align: center; }
-  .repositorio img {
-    width: 10%; }
 
 .footer-contacto {
   width: 95%;

@@ -1,0 +1,45 @@
+@import "src/sass/utilities/mixin";
+
+//SOBRE experiencia
+@mixin experienciaResponsive {
+  @include tablet() {
+    .titulo-experiencia {
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 2rem;
+      }
+  
+      .container-experiencia {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        margin: 1rem;
+        .section-experiencia {
+          align-items: center;
+        }
+      }
+  }
+
+  @include mobile() {
+    .titulo-experiencia {
+      text-align: center;
+      font-size: 2rem;
+      padding: 1rem;
+    }
+
+    .container-experiencia {
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+      margin: 1rem;
+      .section-experiencia {
+        align-items: center;
+      }
+    }
+
+    .repositorio{
+        img {
+
+          width: 20%;
+        }
+    }
+  }
+}
