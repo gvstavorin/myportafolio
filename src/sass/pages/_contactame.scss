@@ -1,0 +1,29 @@
+@import "src/sass/utilities/mixin";
+
+//responsive form contactame
+@mixin contactameResponsive {
+  @include tablet() {
+    .tituloContactame {
+        position: absolute;
+        top: 20%;
+        font-size: 2rem;
+      }
+      .sectionContactame {
+        height: 78vh;
+      }
+
+  }
+
+  @include mobile() {
+    
+    .tituloContactame {
+        position: absolute;
+        top: 20%;
+        font-size: 2rem;
+      }
+      .sectionContactame {
+        height: 78vh;
+      }
+
+  }
+}

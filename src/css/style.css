@@ -1,7 +1,9 @@
 body {
+  margin: none;
   scroll-behavior: smooth;
   font-family: "Roboto Condensed", sans-serif;
   background: url("../img/fondo4.jpg") no-repeat right fixed;
+  line-height: 1.5;
   min-height: 100vh;
   display: flex;
   flex-direction: column; }
@@ -43,13 +45,13 @@ header {
     background-color: transparent;
     cursor: pointer; } }
 
-.navbar a {
-  font-size: 1.2rem;
-  color: black;
-  margin-left: 3rem; }
-
-.navbar a:hover {
-  color: #8a8a8a; }
+.navbar {
+  display: block; }
+  .navbar a {
+    font-size: 1.3rem;
+    margin-left: 3rem; }
+  .navbar a:hover {
+    color: #8a8a8a; }
 
 @media screen and (max-width: 900px) {
   .navbar a {
@@ -90,7 +92,7 @@ header {
   .home .contenido-home {
     max-width: 50rem; }
     .home .contenido-home h1 {
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-weight: 700;
       line-height: 0; }
     .home .contenido-home h3 {
@@ -144,7 +146,7 @@ header {
       height: 42px;
       align-items: center;
       border-radius: 120px;
-      color: rgba(0, 0, 0, 0.548);
+      color: #535353;
       transition: 0.4s; }
     .home .home-contacto a:hover {
       transform: scale(1.2);
@@ -204,7 +206,8 @@ header {
       width: 97%; } }
 
 .section-SobreMi {
-  margin-top: 1rem;
+  padding: 2rem;
+  margin-top: 3rem;
   text-align: center; }
   .section-SobreMi h1 {
     font-size: 3.5rem; }
@@ -213,7 +216,7 @@ header {
     border-radius: 50%;
     box-shadow: 0px 8px 15px 12px rgba(130, 138, 138, 0.69); }
   .section-SobreMi p {
-    font-size: 1.3rem; }
+    font-size: 1.5rem; }
 
 @media screen and (max-width: 900px) {
   .section-SobreMi h1 {
@@ -240,33 +243,6 @@ header {
   font-size: 3.5rem;
   padding: 2rem;
   margin: 1rem; }
-
-.container-experiencia {
-  display: grid;
-  justify-content: end;
-  text-align: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
-  margin: 6rem; }
-  .container-experiencia .section-experiencia {
-    background-color: #fff3f3;
-    border-radius: 0.4rem;
-    overflow: hidden;
-    box-shadow: 0px 8px 15px 12px rgba(130, 138, 138, 0.69); }
-    .container-experiencia .section-experiencia h2 {
-      background-color: #181717;
-      color: #cecdcd;
-      padding: 10px;
-      margin: 0; }
-    .container-experiencia .section-experiencia .item-experiencia {
-      padding: 2rem; }
-      .container-experiencia .section-experiencia .item-experiencia .title-experiencia {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 5px; }
-      .container-experiencia .section-experiencia .item-experiencia .info-experiencia {
-        font-size: 16px;
-        margin-bottom: 10px; }
 
 .repositorio {
   text-align: center; }
@@ -313,6 +289,7 @@ header {
 .titulo-habilidades {
   text-align: center;
   font-size: 3.5rem;
+  margin-top: 3rem;
   padding: 2rem;
   margin: 1rem; }
 
@@ -325,20 +302,19 @@ header {
   padding: 20px;
   text-align: -webkit-center; }
   .container-habilidades .section-habilidades {
-    background-color: #fff3f3;
+    background-color: white;
     border-radius: 0.4rem;
     overflow: hidden;
     box-shadow: 0px 8px 15px 12px rgba(130, 138, 138, 0.69); }
     .container-habilidades .section-habilidades h2 {
-      background-color: #181717;
-      color: #cecdcd;
+      background-color: black;
+      color: white;
       padding: 10px;
       margin: 0; }
     .container-habilidades .section-habilidades .item-habilidades {
-      padding: 1rem;
-      text-align: web-; }
+      padding: 1rem; }
       .container-habilidades .section-habilidades .item-habilidades .title-habilidades {
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: bold;
         margin-bottom: 5px; }
       .container-habilidades .section-habilidades .item-habilidades .progress-container {
@@ -416,7 +392,7 @@ header {
     top: 4.5rem;
     font-size: 3.5rem; }
   .sectionContactame .formularioContacto {
-    width: 500px;
+    width: 300px;
     padding: 40px;
     border-radius: 5px;
     background-color: white;
@@ -444,6 +420,22 @@ header {
       left: 35%; }
     .sectionContactame .formularioContacto button:hover {
       background-color: #646664; }
+
+@media screen and (max-width: 900px) {
+  .tituloContactame {
+    position: absolute;
+    top: 20%;
+    font-size: 2rem; }
+  .sectionContactame {
+    height: 78vh; } }
+
+@media screen and (max-width: 670px) {
+  .tituloContactame {
+    position: absolute;
+    top: 20%;
+    font-size: 2rem; }
+  .sectionContactame {
+    height: 78vh; } }
 
 .footer-contacto {
   width: 95%;

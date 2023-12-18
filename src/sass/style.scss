@@ -7,12 +7,15 @@
 @import "src/sass/pages/sobremi";
 @import "src/sass/pages/experiencia";
 @import "src/sass/pages/habilidades";
+@import "src/sass/pages/contactame";
 
 //nesting
 body {
+  margin: none;
   scroll-behavior: smooth;
   font-family: "Roboto Condensed", sans-serif;
   background: $fondo-principal;
+  line-height: 1.5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -46,9 +49,10 @@ header {
 }
 @include menuIconResponsive;
 .navbar {
+  display: block;
+
   a {
-    font-size: 1.2rem;
-    color: black;
+    font-size: $tamano-menuPc;
     margin-left: 3rem;
   }
   a:hover {
@@ -66,16 +70,16 @@ header {
   .contenido-home {
     max-width: 50rem;
     h1 {
-      font-size: 4rem;
+      font-size: $titulo-pagina;
       font-weight: 700;
       line-height: 0;
     }
     h3 {
-      font-size: 1.5rem;
-      color: black;
+      font-size: $subtitulo-pagina;
+      color:$color-texto;
     }
     p {
-      font-size: 1.5rem;
+      font-size: $tamano-textoPrincipal;
     }
     .btn-box {
       position: relative;
@@ -130,7 +134,7 @@ header {
       height: 42px;
       align-items: center;
       border-radius: 120px;
-      color: rgba(0, 0, 0, 0.548);
+      color:$color-secundario;
       transition: 0.4s;
     }
     a:hover {
@@ -145,18 +149,19 @@ header {
 //  sass para pagina de sobre mi *sobre-mi*
 
 .section-SobreMi {
-  margin-top: 1rem;
+  padding: 2rem;  
+  margin-top: 3rem;
   text-align: center;
   h1 {
-    font-size: 3.5rem;
+    font-size: $titulo-pagina;
   }
   img {
     width: 20%;
     border-radius: 50%;
-    box-shadow: 0px 8px 15px 12px rgba(130, 138, 138, 0.69);
+    box-shadow: $boxshadow;
   }
   p {
-    font-size: 1.3rem;
+    font-size: $tamano-textoPrincipal;
   }
 }
 //responsive SobreMi
@@ -169,40 +174,6 @@ header {
   padding: 2rem;
   margin: 1rem;
 }
-.container-experiencia {
-  display: grid;
-  justify-content: end;
-  text-align: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
-  margin: 6rem;
-  .section-experiencia {
-    background-color: #fff3f3;
-    border-radius: 0.4rem;
-    overflow: hidden;
-    box-shadow: 0px 8px 15px 12px rgba(130, 138, 138, 0.69);
-    h2 {
-      background-color: #181717;
-      color: rgb(206, 205, 205);
-      padding: 10px;
-      margin: 0;
-    }
-    .item-experiencia {
-      padding: 2rem;
-
-      .title-experiencia {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 5px;
-      }
-      .info-experiencia {
-        font-size: 16px;
-        margin-bottom: 10px;
-      }
-    }
-  }
-}
-
 .repositorio {
   text-align: center;
   img {
@@ -210,7 +181,13 @@ header {
   }
 }
 
-//edicion de codigo de elemento de bootstrap
+//edicion de codigo de elemento de bootstrap experiencia
+
+
+
+
+
+
 
 .card-body{
   border-radius: 0.4rem;
@@ -235,7 +212,8 @@ header {
 
 .titulo-habilidades {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: $titulo-pagina;
+  margin-top: 3rem;
   padding: 2rem;
   margin: 1rem;
 }
@@ -250,23 +228,22 @@ header {
   text-align: -webkit-center;
 
   .section-habilidades {
-    background-color: #fff3f3;
+    background-color: $color-terciario;
     border-radius: 0.4rem;
     overflow: hidden;
-    box-shadow: 0px 8px 15px 12px rgba(130, 138, 138, 0.69);
+    box-shadow: $boxshadow;
 
     h2 {
-      background-color: #181717;
-      color: rgb(206, 205, 205);
+      background-color: $color-principal;
+      color: $color-terciario;
       padding: 10px;
       margin: 0;
     }
     .item-habilidades {
       padding: 1rem;
-      text-align: web-;
 
       .title-habilidades {
-        font-size: 18px;
+        font-size: $tamano-subtituloTexto;
         font-weight: bold;
         margin-bottom: 5px;
       }
@@ -316,7 +293,7 @@ header {
     font-size: 3.5rem;
   }
   .formularioContacto {
-    width: 500px;
+    width: 300px;
     padding: 40px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 1);
@@ -355,6 +332,9 @@ header {
   }
 }
 
+//responsive contacatame
+
+@include contactameResponsive;
 //FOOTER
 
 .footer-contacto {
