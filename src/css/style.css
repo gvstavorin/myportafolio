@@ -42,6 +42,7 @@ header {
   .cerrar-menu {
     display: block;
     font-size: 2rem;
+    z-index: 1;
     background-color: transparent;
     cursor: pointer; } }
 
