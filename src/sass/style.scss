@@ -71,7 +71,8 @@ header {
     max-width: 50rem;
     h1 {
       font-size: $titulo-pagina;
-      font-weight: 700;
+      font-weight: 500;
+
       line-height: 0;
     }
     h3 {
@@ -154,6 +155,8 @@ header {
   text-align: center;
   h1 {
     font-size: $titulo-pagina;
+    font-weight: 500;
+
   }
   img {
     width: 20%;
@@ -213,67 +216,36 @@ header {
 .titulo-habilidades {
   text-align: center;
   font-size: $titulo-pagina;
-  margin-top: 3rem;
+  margin-top: 6rem;
   padding: 2rem;
-  margin: 1rem;
+  font-weight: 500;
 }
 
-.container-habilidades {
-  display: grid;
-  justify-content: end;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 4rem;
-  grid-gap: 20px;
-  padding: 20px;
-  text-align: -webkit-center;
 
-  .section-habilidades {
-    background-color: $color-terciario;
-    border-radius: 0.4rem;
-    overflow: hidden;
-    box-shadow: $boxshadow;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  word-wrap: break-word;
 
-    h2 {
-      background-color: $color-principal;
-      color: $color-terciario;
-      padding: 10px;
-      margin: 0;
-    }
-    .item-habilidades {
-      padding: 1rem;
-
-      .title-habilidades {
-        font-size: $tamano-subtituloTexto;
-        font-weight: bold;
-        margin-bottom: 5px;
-      }
-      .progress-container {
-        width: 300px;
-        background-color: #000000;
-        border-radius: 5px;
-        overflow: hidden;
-
-        .progress-bar1 {
-          @include progressBar(20%);
-        }
-        .progress-bar2 {
-          @include progressBar(40%);
-        }
-        .progress-bar3 {
-          @include progressBar(60%);
-        }
-        .progress-bar4 {
-          @include progressBar(30%);
-        }
-        .progress-bar5 {
-          @include progressBar(60%);
-        }
-        .progress-bar6 {
-          @include progressBar(90%);
-        }
-      }
-    }
+  .card-habilidades {
+    
+    width: 150px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 8px 15px 12px rgba(130, 138, 138, 0.69);
+  
+     i{
+      font-size: 5rem;
+     } 
+     p{
+      font-size: .7rem;
+     }
   }
+  
 }
 
 //responsive habilidades
@@ -289,8 +261,9 @@ header {
   margin: 0;
   .tituloContactame {
     position: absolute;
-    top: 4.5rem;
+    top: 6rem;
     font-size: 3.5rem;
+    font-weight: 500;
   }
   .formularioContacto {
     width: 300px;

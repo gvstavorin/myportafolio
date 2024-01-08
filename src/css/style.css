@@ -94,7 +94,7 @@ header {
     max-width: 50rem; }
     .home .contenido-home h1 {
       font-size: 3.5rem;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 0; }
     .home .contenido-home h3 {
       font-size: 1.5rem;
@@ -211,7 +211,8 @@ header {
   margin-top: 3rem;
   text-align: center; }
   .section-SobreMi h1 {
-    font-size: 3.5rem; }
+    font-size: 3.5rem;
+    font-weight: 500; }
   .section-SobreMi img {
     width: 20%;
     border-radius: 50%;
@@ -290,81 +291,27 @@ header {
 .titulo-habilidades {
   text-align: center;
   font-size: 3.5rem;
-  margin-top: 3rem;
+  margin-top: 6rem;
   padding: 2rem;
-  margin: 1rem; }
+  font-weight: 500; }
 
-.container-habilidades {
-  display: grid;
-  justify-content: end;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 4rem;
-  grid-gap: 20px;
-  padding: 20px;
-  text-align: -webkit-center; }
-  .container-habilidades .section-habilidades {
-    background-color: white;
-    border-radius: 0.4rem;
-    overflow: hidden;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  word-wrap: break-word; }
+  .card-container .card-habilidades {
+    width: 150px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 8px 15px 12px rgba(130, 138, 138, 0.69); }
-    .container-habilidades .section-habilidades h2 {
-      background-color: black;
-      color: white;
-      padding: 10px;
-      margin: 0; }
-    .container-habilidades .section-habilidades .item-habilidades {
-      padding: 1rem; }
-      .container-habilidades .section-habilidades .item-habilidades .title-habilidades {
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin-bottom: 5px; }
-      .container-habilidades .section-habilidades .item-habilidades .progress-container {
-        width: 300px;
-        background-color: #000000;
-        border-radius: 5px;
-        overflow: hidden; }
-        .container-habilidades .section-habilidades .item-habilidades .progress-container .progress-bar1 {
-          width: 20%;
-          height: 30px;
-          background-color: #4caf50;
-          text-align: center;
-          line-height: 30px;
-          color: white; }
-        .container-habilidades .section-habilidades .item-habilidades .progress-container .progress-bar2 {
-          width: 40%;
-          height: 30px;
-          background-color: #4caf50;
-          text-align: center;
-          line-height: 30px;
-          color: white; }
-        .container-habilidades .section-habilidades .item-habilidades .progress-container .progress-bar3 {
-          width: 60%;
-          height: 30px;
-          background-color: #4caf50;
-          text-align: center;
-          line-height: 30px;
-          color: white; }
-        .container-habilidades .section-habilidades .item-habilidades .progress-container .progress-bar4 {
-          width: 30%;
-          height: 30px;
-          background-color: #4caf50;
-          text-align: center;
-          line-height: 30px;
-          color: white; }
-        .container-habilidades .section-habilidades .item-habilidades .progress-container .progress-bar5 {
-          width: 60%;
-          height: 30px;
-          background-color: #4caf50;
-          text-align: center;
-          line-height: 30px;
-          color: white; }
-        .container-habilidades .section-habilidades .item-habilidades .progress-container .progress-bar6 {
-          width: 90%;
-          height: 30px;
-          background-color: #4caf50;
-          text-align: center;
-          line-height: 30px;
-          color: white; }
+    .card-container .card-habilidades i {
+      font-size: 5rem; }
+    .card-container .card-habilidades p {
+      font-size: .7rem; }
 
 @media screen and (max-width: 900px) {
   .titulo-habilidades {
@@ -390,8 +337,9 @@ header {
   margin: 0; }
   .sectionContactame .tituloContactame {
     position: absolute;
-    top: 4.5rem;
-    font-size: 3.5rem; }
+    top: 6rem;
+    font-size: 3.5rem;
+    font-weight: 500; }
   .sectionContactame .formularioContacto {
     width: 300px;
     padding: 40px;
